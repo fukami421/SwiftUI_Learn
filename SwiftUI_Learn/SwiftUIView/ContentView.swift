@@ -11,10 +11,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            MapView()
-                .edgesIgnoringSafeArea(.top)
-                .frame(height: 300)
-            CircleImage()
+//            MapView(coordinate: <#CLLocationCoordinate2D#>)
+//                .edgesIgnoringSafeArea(.top)
+//                .frame(height: 300)
+            CircleImage(image: Image("bb8"))
                 .offset(y: -130)
                 .padding(.bottom, -130)
             VStack(alignment: .leading) {
