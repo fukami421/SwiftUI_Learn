@@ -17,8 +17,7 @@ struct MapView: UIViewRepresentable {
     }
 
     func updateUIView(_ view: MKMapView, context: Context) {
-        let coordinate = CLLocationCoordinate2D(
-            latitude: 35.710063, longitude: 139.8107) // 東京スカイツリーの座標
+        let coordinate = self.coordinate
         let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01) // 縮尺
         let region = MKCoordinateRegion(center: coordinate, span: span)
         view.setRegion(region, animated: true)
