@@ -14,7 +14,7 @@ struct LandmarkList: View {
     var body: some View {
         NavigationView {
             List {
-                Toggle(isOn: $showFavoritesOnly) {
+                Toggle(isOn: $showFavoritesOnly) { // use the $ prefix to access a binding to a state variable
                     Text("Favorites only")
                 }
 
